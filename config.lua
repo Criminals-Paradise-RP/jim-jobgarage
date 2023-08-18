@@ -27,7 +27,7 @@ Config = {
 	Menu = "qb",
 	Notify = "qb",
 
-	Fuel = "LegacyFuel", -- Set this to your fuel script folder
+	Fuel = "cdn-fuel", -- Set this to your fuel script folder
 
 	CarDespawn = true, -- Sends the vehicle to hell (removal animation)
 
@@ -35,54 +35,24 @@ Config = {
 
 	Locations = {
 		{ 	zoneEnable = true,
-			job = "mechanic",
+			job = "sadot",
 			garage = {
-				spawn = vec4(-179.34, -1285.27, 30.83, 89.24),  -- Where the car will spawn
-				out = vec4(-177.1, -1282.25, 31.3, 179.01),	-- Where the parking stand is
+				spawn = vec4(839.78, -1317.43, 26.21, 91.15),  -- Where the car will spawn
+				out = vec4(845.71, -1319.69, 26.4, 94.16),	-- Where the parking stand is
 				list = {
-					["cheburek"] = {
-						colors = { 136, 137 },
-						grade = 4,
-						livery = 5,
-						bulletproof = true,
-						extras = { 1, 4 },
-					},
-					["burrito3"] = { },
-				},
-			},
-		},
-		{ 	zoneEnable = true,
-			job = "police",
-			garage = {
-				spawn = vec4(435.41, -975.93, 25.31, 90.86),
-				out = vec4(441.39, -974.78, 25.7, 178.49),
-				list = {
-					["police"] = {
-						CustomName = "Police Car",
-						livery = 5,
-						extras = { 1, 2 },
+					["dot1"] = {
+						CustomName = "Truck w/ Snow Plow"
+						grade = 0,
+						livery = 0,
+						extras = { 1, 2, 4. 5, 7 },
 						performance = "max",
-						trunkItems = {
-							{ name = "heavyarmor", amount = 2, info = {}, type = "item", slot = 1, },
-							{ name = "empty_evidence_bag", amount = 10, info = {}, type = "item", slot = 2, },
-							{ name = "police_stormram", amount = 1, info = {}, type = "item", slot = 3, },
-						},
 					},
-					["fbi"] = {
-						rank = { 4 },
-						performance = { 2, 3, 3, 2, 4, true },
-					},
-				},
-			},
-		},
-		{ 	zoneEnable = true,
-			job = "ambulance",
-			garage = {
-				spawn = vec4(294.95, -606.92, 43.24, 64.84),
-				out = vec4(294.54, -599.52, 43.28, 159.68),
-				list = {
-					["ambulance"] = {
-						CustomName = "Ambulance"
+					["dot2"] = {
+						CustomName = "Truck w/o Snow Plow"
+						grade = 0,
+						livery = 0,
+						extras = { 1, 4. 5, 7 },
+						performance = "max",
 					},
 				},
 			},
