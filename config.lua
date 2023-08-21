@@ -41,17 +41,17 @@ Config = {
 				out = vec4(845.71, -1319.69, 26.4, 94.16),	-- Where the parking stand is
 				list = {
 					["dot1"] = {
-						CustomName = "Truck w/ Snow Plow"
+						CustomName = "Truck w/ Snow Plow",
 						grade = 0,
 						livery = 0,
-						extras = { 1, 2, 4. 5, 7 },
+						extras = { 1, 2, 4, 5, 7 },
 						performance = "max",
 					},
 					["dot2"] = {
-						CustomName = "Truck w/o Snow Plow"
+						CustomName = "Truck w/o Snow Plow",
 						grade = 0,
 						livery = 0,
-						extras = { 1, 4. 5, 7 },
+						extras = { 1, 4, 5, 7 },
 						performance = "max",
 					},
 				},
