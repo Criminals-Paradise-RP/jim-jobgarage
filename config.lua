@@ -34,24 +34,59 @@ Config = {
 	DistCheck = false, -- Require the vehicle to be near by to remove it
 
 	Locations = {
-		{ 	zoneEnable = true,
+		{ 	zoneEnable = false,
 			job = "sadot",
 			garage = {
-				spawn = vec4(839.78, -1317.43, 26.21, 91.15),  -- Where the car will spawn
-				out = vec4(845.71, -1319.69, 26.4, 94.16),	-- Where the parking stand is
+				spawn = vec4(-361.48, -123.14, 38.03, 158.96),
+				out = vec4(-356.2, -126.55, 39.43, 253.49),
 				list = {
 					["dot1"] = {
-						CustomName = "Truck w/ Snow Plow",
+						CustomName = "Truck | No Snow Plow",
 						grade = 0,
 						livery = 0,
 						extras = { 1, 2, 4, 5, 7 },
 						performance = "max",
+						trunkItems = { "roadworkbarrier", "roadclosedbarrier", "constructionbarrier", "constructionbarrier2", "constructionbarrier3", "roadconebig", "roadcone", "roadpole", "worklight", "worklight2", "worklight3", "trafficdevice", "trafficdevice2", "meshfence1", "meshfence2", "meshfence3", "waterbarrel" }
 					},
 					["dot2"] = {
-						CustomName = "Truck w/o Snow Plow",
+						CustomName = "Truck | Snow Plow",
 						grade = 0,
 						livery = 0,
 						extras = { 1, 4, 5, 7 },
+						performance = "max",
+						trunkItems = { "roadworkbarrier", "roadclosedbarrier", "constructionbarrier", "constructionbarrier2", "constructionbarrier3", "roadconebig", "roadcone", "roadpole", "worklight", "worklight2", "worklight3", "trafficdevice", "trafficdevice2", "meshfence1", "meshfence2", "meshfence3", "waterbarrel" }
+					},
+					["towtruck"] = {
+						CustomName = "Tow Truck | Hook",
+						grade = 0,
+						performance = "max",
+						trunkItems = { "roadworkbarrier", "roadclosedbarrier", "constructionbarrier", "constructionbarrier2", "constructionbarrier3", "roadconebig", "roadcone", "roadpole", "worklight", "worklight2", "worklight3", "trafficdevice", "trafficdevice2", "meshfence1", "meshfence2", "meshfence3", "waterbarrel" }
+					},
+					["flatbed"] = {
+						CustomName = "Flatbed",
+						grade = 0,
+						performance = "max",
+						trunkItems = { "roadworkbarrier", "roadclosedbarrier", "constructionbarrier", "constructionbarrier2", "constructionbarrier3", "roadconebig", "roadcone", "roadpole", "worklight", "worklight2", "worklight3", "trafficdevice", "trafficdevice2", "meshfence1", "meshfence2", "meshfence3", "waterbarrel" }
+					},
+					["utillitruck3"] = {
+						CustomName = "Utility Truck",
+						grade = 0,
+						performance = "max",
+						trunkItems = { "roadworkbarrier", "roadclosedbarrier", "constructionbarrier", "constructionbarrier2", "constructionbarrier3", "roadconebig", "roadcone", "roadpole", "worklight", "worklight2", "worklight3", "trafficdevice", "trafficdevice2", "meshfence1", "meshfence2", "meshfence3", "waterbarrel" }
+					},
+					["panto"] = {
+						CustomName = "Coupe Loaner",
+						grade = 0,
+						performance = "max",
+					},
+					["slamtruck"] = {
+						CustomName = "Slammed Tow Truck",
+						grade = 0,
+						performance = "max",
+					},
+					["cheburek"] = {
+						CustomName = "Sedan Loaner",
+						grade = 0,
 						performance = "max",
 					},
 				},
